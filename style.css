@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: white;
+
+}
+
+h1 {
+    font-family: Calibri, serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.label {
+    position: relative;
+    min-width: 145px;
+    width: 15%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 7px;
+    background-color: rgba(27, 32, 102, 0.77);
+    border-radius: 10px 10px 0 0;
+    box-shadow: -1px -6px 3px 2px lightgrey;
+    z-index: 2;
+}
+
+.block {
+    min-width: 550px;
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 480px;
+    height: calc(100% - (65px + 325px));
+    background: radial-gradient(rgba(3, 3, 90, 0.93), rgba(27, 32, 102, 0.77));
+    box-shadow: -1px 4px 10px 5px rgb(175, 175, 175);
+    border-radius: 0 10px 10px 10px;
+    z-index: 0;
+}
+
+textarea{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 20px;
+}
+textarea:focus{
+    color: #36d5f1;
+    font-family: "Monotype Corsiva", Cursive, serif;
+}
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav a {
+    color: cornflowerblue;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+
+}
+
+nav a:hover {
+    background-color: rgba(45, 34, 68, 0.89);
+    font-family: Calibri, serif;
+    color: #4abaee;
+    cursor: pointer;
+}
+
+.link:after {
+    content: "|";
+    color: white;
+    padding-left: 15px;
+}
+
+article > p.daughter {
+    color: #bbc7e8;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+article p {
+    color: #fbfbfd;
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+.img1 {
+    width: 45%;
+    margin-top: 10px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 550px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    border-radius: 20px;
+    border: transparent 20px solid;
+    box-shadow: -1px 10px 10px 5px rgb(109, 109, 109);
+    background-color: rgba(27, 32, 102, 0.77);
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}
+
+.jump {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    text-align: center;
+    background-color: cornflowerblue;
+    z-index: 3;
+}
+
+.jump a {
+    text-decoration: none;
+    color: #fbfbfd;
+    font-size: 2vw;
+}
+
+/* -----------------------страница 2 -----------------------*/
+
+.block1 {
+    position: relative;
+    width: calc(98% - 20px);
+    height: calc(98% - 20px);
+    min-width: 1410px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(9, 16, 64);
+    padding: 20px;
+}
+
+.block2 {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(35, 20, 88, 0.93), rgba(134, 175, 217, 0.77));
+    border-radius: 0 0 20px 20px;
+}
+.rectangle{
+    width: 15%;
+    height: 10%;
+    background-color: rgb(9, 16, 64);
+    min-width: 220px;
+    font-size: 1.6em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+}
+
+.text{
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    color: #bbc7e8;
+    font-size: 1.2em;
+}
+
+.listElem:after, .listElem:before {
+    content: url("image/star.png");
+}
+.squareS
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 150px auto;
+}
+.square{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #9135d5;
+    border: darkslateblue 7px solid;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 24px;
+}
+.words{
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    top: 30%;
+    letter-spacing: 20px;
+    animation: blink 1s linear infinite;
+    z-index: 2;
+    text-shadow: 0 0 5px #beaacc
+}
+@keyframes blink
+{
+    0% { color: #032c6d; }
+    50% { color: #36d5f1; }
+    100% { color: #032c6d; }
+}
+
